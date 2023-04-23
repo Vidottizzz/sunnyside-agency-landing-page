@@ -30,53 +30,87 @@ font-family: 'Fraunces', serif; */
   font-size: 18px;
   text-align: center;
 }
+body {
+  position: relative;
+}
 /* HEADER */
-h1 {
+#nav-bar {
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+#header-logo {
+  width: 155px;
+  height: 30px;
+
+}
+#header-hamburg {
+  width: 29px;
+  height: 21.5px;
+}
+h1,
+#hold-title {
+  font-weight: bold;
   color: white;
+  font-size: 2.8rem;
+  margin-top: 4rem;
+  letter-spacing: 0.5rem;
+}
+#hold-top-header p {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+
+#top-section {
+  background-image: url(/images/mobile/image-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 38rem;
+}
+#hold-top-header {
+  font-family: "Fraunces", serif;
 }
 /* SECTION 1 */
 #top-section {
   /* background-color: #3ebfff; */
 }
-#header-logo {
-  width: 100px;
-  height: 30px;
-  background-color: aqua;
-}
-#header-hamburg {
-    background-color: aqua;
-    width: 100px;
-  height: 30px;
-}
+
+/* ARROW IMG */
 #header-img1 {
-  width: 100px;
-  height: 200px;
-  background-color: aquamarine;
+  width: 42px;
+  height: 150px;
+  top: 20.6rem;
+  left: 12.1rem;
+  /* background-color: aquamarine; */
+  position: absolute;
 }
+/* EGG image */
 #header-img2 {
-    width: 100%;
-    height: 700px;
+  max-width: 620px;
+  min-width: none;
+  width: 100%;
+  height: 393px;
 }
 #header-img3 {
-    width: 100%;
-    height: 400px;
+  width: 100%;
+  height: 400px;
 }
 /* SECTION 2 */
-    #header-section2-img {
-    width: 100%;
-    height: 400px;
+#header-section2-img {
+  width: 100%;
+  height: 400px;
 }
 
 /* MAIN */
 
 /* SECTION 3 */
-    #main-section3-img1 {
-    width: 100%;
-    height: 700px;
+#main-section3-img1 {
+  width: 100%;
+  height: 700px;
 }
-    #main-section3-img2 {
-    width: 100%;
-    height: 700px;
+#main-section3-img2 {
+  width: 100%;
+  height: 700px;
 }
 /* FOOTER */
 
