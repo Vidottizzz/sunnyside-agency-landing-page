@@ -1,45 +1,91 @@
-
 :root {
-    /* ## Colors */
+  /* ## Colors */
 
-/* ### Primary */
+  /* ### Primary */
 
---Softred: hsl(7, 99%, 70%);
--Yellow: hsl(51, 100%, 49%);
-/* (graphic design text) */
---Darkdesaturatedcyan: hsl(167, 40%, 24%);
-/* (photography text) */
---Darkblue: hsl(198, 62%, 26%);
-/* (footer) */
---Darkmoderatecyan: hsl(168, 34%, 41%);
+  --Softred: hsl(7, 99%, 70%);
+  -yellow: hsl(51, 100%, 49%);
+  /* (graphic design text) */
+  --Darkdesaturatedcyan: hsl(167, 40%, 24%);
+  /* (photography text) */
+  --Darkblue: hsl(198, 62%, 26%);
+  /* (footer) */
+  --Darkmoderatecyan: hsl(168, 34%, 41%);
 
-/* ### Neutral */
-
---Verydarkdesaturatedblue: hsl(212, 27%, 19%);
---Verydarkgrayishblue: hsl(213, 9%, 39%);
---Darkgrayishblue: hsl(232, 10%, 55%);
---Grayishblue: hsl(210, 4%, 67%);
---White: hsl(0, 0%, 100%);
+  /* ### Neutral */
+  --Verydarkdesaturatedblue: hsl(212, 27%, 19%);
+  --Verydarkgrayishblue: hsl(213, 9%, 39%);
+  --Darkgrayishblue: hsl(232, 10%, 55%);
+  --Grayishblue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
 }
 /* font-family: 'Barlow', sans-serif;
 font-family: 'Fraunces', serif; */
 * {
-    font-size: 18px;
+  padding: 0;
+  margin: 0;
+  vertical-align: baseline;
+  list-style: none;
+  border: 0;
+  font-size: 18px;
+  text-align: center;
+}
+/* HEADER */
+h1 {
+  color: white;
+}
+/* SECTION 1 */
+#top-section {
+  /* background-color: #3ebfff; */
+}
+#header-logo {
+  width: 100px;
+  height: 30px;
+  background-color: aqua;
+}
+#header-hamburg {
+    background-color: aqua;
+    width: 100px;
+  height: 30px;
+}
+#header-img1 {
+  width: 100px;
+  height: 200px;
+  background-color: aquamarine;
+}
+#header-img2 {
+    width: 100%;
+    height: 700px;
+}
+#header-img3 {
+    width: 100%;
+    height: 400px;
+}
+/* SECTION 2 */
+    #header-section2-img {
+    width: 100%;
+    height: 400px;
 }
 
+/* MAIN */
 
+/* SECTION 3 */
+    #main-section3-img1 {
+    width: 100%;
+    height: 700px;
+}
+    #main-section3-img2 {
+    width: 100%;
+    height: 700px;
+}
+/* FOOTER */
 
+/* SECTION 4 */
 
-
-
-
-
-
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
