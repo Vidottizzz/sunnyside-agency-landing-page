@@ -250,29 +250,49 @@ h6 {
   content: "";
   width: 350px;
 }
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+/* FOOTER LAST SECTION */
+#last-section {
+  background-color: #90d4c5;
+}
+#logo-last {
+ margin: 4.5rem 0 1rem 0;
+ width:12rem;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
+#social-media {
+  display: flex;
+  padding: 0 7.7rem;
+  justify-content: space-between;
+  padding-bottom: 4rem;
 }
-
-
-
+#social-media img {
+  width: 1.45rem;
+}
+#footer-links {
+  padding: 2.6rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+#footer-links a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-family: "Barlow";
+  color: var(--Darkmoderatecyan);
+}
 /* ATTRIBUTION */
 .attribution {
-  font-size: 11px;
+  font-size: 0.8rem;
   text-align: center;
+  background-color: #90d4c5;
+  font-family: "Barlow";
+  padding-bottom: 1rem;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  /* color: #bb6402; */
+  color: #2d8eb8;
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: #32afe4;
 }
