@@ -168,7 +168,7 @@ background-color: #ffd600;
 
 /* SECTION 3 */
 #main-hold-glass {
-  background-image: url(/images/mobile/image-stand-out.jpg) ;
+  background-image: url(/images/desktop/image-stand-out.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -176,10 +176,8 @@ background-color: #ffd600;
   background-position: center center;
 }
 #section3-cherry {
-  background-image: url(/images/mobile/image-graphic-design.jpg);
-
-  height: 41.9rem;
-
+  background-image: url(/images/desktop/image-graphic-design.jpg);
+  height: 40rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -187,6 +185,18 @@ background-color: #ffd600;
 
   position: relative;
 }
+#section3-orange {
+  background-image: url(/images/desktop/image-photography.jpg);
+  height: 40rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 2rem 0;
+  
+  position: relative;
+  color: var(--Grayishblue);
+}
+
 #cherry-text {
   padding-top: 28.2rem;
   color: var(--Darkdesaturatedcyan);
@@ -208,17 +218,7 @@ background-color: #ffd600;
   padding: 0 2rem;
   line-height: 1.8rem;
 }
-#section3-orange {
-  background-image: url(/images/mobile/image-photography.jpg);
-  height: 40rem;
-  color: var(--Grayishblue);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  padding: 2rem 0;
 
-  position: relative;
-}
 
 #orange-text p {
   font-size: 1.1rem;
@@ -339,6 +339,10 @@ h6 {
 
 /* IRÁ COMEÇAR A MUDAR A PARTIR DO MOMENTO QUE AS IMAGENS NÃO CRESCEM MAIS, TAMANHO MAXIMO DELAS 580PX */
 @media screen and (min-width: 680px) {
+  #footer-section4 .padding-add { 
+    padding: 0rem 10rem;
+
+  }
  #top-section2 {
   display: flex;
   width: 100%;
@@ -401,18 +405,81 @@ h6 {
 }
 /* MAIN SECTION */
 
-
- #learn-more2 {
-
- }
  #learn-more1-div,#learn-more2-div {
 position: absolute;
 left: 1rem;
 bottom: 4rem;
  }
+ /* SECTION FRUITS */
+ #hold-section3-fruits {
+  display: flex;
 }
+#section3-cherry {
+  height: 75vh;
+  width: 50%;
+  background-position: 60% 20%;
+}
+#cherry-text p, #orange-text p {
+  font-size: 1rem;
+}
+#section3-orange {
+  height: 75vh;
+  width: 50%;
+
+}
+#footer-links {
+  padding: 2.6rem 10rem;
+}
+.gallery {
+  display: flex;
+  max-width: 100%;
+  width: 100%;
+
+}
+
+.gallery img {
+  width: 50%;
+  max-width: 100%;
+  height: 50%;
+  object-fit: cover;
+
+}
+
+.gallery::after {
+  content: "";
+  width: 350px;
+}
+
+/* MEDIA SCREEN 1000 */
+
+}
+@media screen and (min-width: 1000px) {
+  #social-media {
+    width: 15rem;
+    margin: auto;
+  }
+  #footer-links {
+
+    width: 20rem;
+    margin: auto;
+    margin-bottom: 5rem;
+
+  }
+  #cherry-text p, #orange-text p {
+    font-size: 1.2rem;
+  }
+
+}
+
+
+/* MEDIA SCREEN 1200 */
 @media screen and (min-width: 1200px) {
 
+  #footer-section4 .padding-add { 
+    padding: 0rem 20rem;
+
+
+  }
 
   #learn-more1 h2 ,#learn-more2 h3{
     padding:3.6rem 6rem 0rem 6rem;
@@ -439,11 +506,52 @@ bottom: 4rem;
     left: 5.4rem;
     bottom: 2rem;
      }
-} 
-@media screen and (min-width: 1440px) {
+     #cherry-text p, #orange-text p {
+      margin: 0 3rem;
+     } 
+     
+  .gallery {
+    display: none;
+  }
   
+  .gallery-desktop {
+display: flex;
+width: 100%;
+height: 32rem;
+  }
+  #milk {
+background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+width: 25%;
+  }
+  #orange {
+    background-image: url(/images/desktop/image-gallery-orange.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+  }
+  #icecream {
+    background-image: url(/images/desktop/image-gallery-cone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+  }
+  #sugarcube {
+    background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 25%;
+  }
+    }
+@media screen and (min-width: 1440px) {
+
   #main-section3 {
-    height: 32rem;
+    height: 65vh;
   }
   #learn-more1 h2 {
     padding:3rem 6rem 0rem 6rem;
@@ -458,7 +566,7 @@ bottom: 4rem;
   #learn-more2 p {
     padding:0rem 6rem 0rem 6rem;
     text-align: left;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
     color: var(--Darkgrayishblue);
     font-family: "Barlow";
@@ -466,15 +574,68 @@ bottom: 4rem;
   #learn-more1-div,#learn-more2-div {
     position: absolute;
     left: 6.2rem;
-    bottom: 2rem;
+    bottom: 4rem;
     }
   #learn-more1-div a ,#learn-more2-div a{
     font-size: 1.2rem;
   }
   #header-hold-egg {
-    height: 60vh;
+    height: 65vh;
   }
   #main-hold-glass {
-   height: 60vh;
+   height: 65vh;
   }
+  #section3-cherry {
+    height: 65vh;
+
+  }
+  #section3-orange {
+    height: 65vh;
+  }
+  #cherry-text,#orange-text {
+    padding-top: 21.5rem;
+   }
+   #cherry-text p, #orange-text p {
+    margin: 0 8rem;
+   } 
+
+  #footer-section4 .padding-add { 
+    padding: 0rem 0rem;
+
+  }
+  #hold-testimonials {
+    display: flex;
+    padding: 0 8rem 4rem 8rem;
+  }
+  
+  #hold-testimonials .photo-text {
+    font-size: 1rem;
+    padding:  0 1.2rem;
+  }
+  #footer-section4 h6 {
+    margin-top: 8rem;
+ 
+  }
+  #social-media {
+
+    width: 10rem;
+    margin: auto;
+    
+  }
+  #footer-links {
+
+    width: 20rem;
+    margin: auto;
+    margin-bottom: 5rem;
+
+  }
+  #cherry-text p, #orange-text p{
+    font-size: 1.3rem;
+  }
+  .gallery {
+    display: none;
+  
+  }
+
 }
+  
