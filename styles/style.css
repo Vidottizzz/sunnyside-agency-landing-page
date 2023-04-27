@@ -1,8 +1,8 @@
 :root {
 /* //hamburger settings */
---bar-width: 40px;
---bar-height: 4px;
---hamburger-gap: 7px;
+--bar-width: 35px;
+--bar-height: 2px;
+--hamburger-gap: 9px;
 --foreground: #333;
 --background: white;
 --animation-timing: 200ms ease-in-out;
@@ -43,6 +43,14 @@ body {
   position: relative;
   font-family: "Fraunces", serif;
 }
+a{
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+  color:white;
+
+}
 /* HEADER */
 
 /* HAMBURGER */
@@ -79,17 +87,72 @@ body {
   pointer-events: none;
 } 
 .hamburger-menu:has(input:checked)::before {
-  rotate: 35deg;
+  rotate: 39deg;
  
 }
 .hamburger-menu:has(input:checked)::after {
-  rotate: -35deg;
+  rotate: -39deg;
 
 }
 .hamburger-menu input:checked {
 opacity: 0;
 width: 0;
 }
+.sidebar {
+  position: absolute;
+  height: 35vh;
+  width: 70%;
+  background-color: white;
+margin: 4.5rem 0rem 0rem 2rem; 
+padding: 2rem;
+transition: translate var(--animation-timing) ;
+ translate: 120%;
+}
+.sidebar::after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: 0;
+  top: -1.6rem;
+  rotate: 180deg;
+  border: 15px solid;
+  border-color: #fff transparent transparent #fff;
+}
+.hamburger-menu:has(input:checked) + .sidebar {
+  translate: 0;
+}
+.sidebar a:hover,.sidebar #contact-anchor:hover {
+   cursor: pointer;
+  
+}
+.sidebar div {
+  margin-bottom: 4rem;
+}
+.sidebar a {
+color: var(--Grayishblue);
+font-family: "Barlow", serif;
+font-size: 1.2rem;
+text-decoration: none;
+}
+.sidebar a:hover {
+  color: hsl(234, 9%, 46%);;
+}
+.sidebar #contact-anchor:hover {
+  background-color: #f8e919
+}
+.sidebar #contact-anchor {
+  margin-top: 1rem;
+  background-color:#ffd600 ;
+  padding: 0.7rem 1.2rem;
+  color:black;
+  font-size: 1rem;
+  border-radius: 2rem;
+  font-family: "Fraunces", serif;
+  align-items: center;
+  align-content: center;
+}
+
 /* //HAMBURGER */
 #nav-bar {
   padding: 0.5rem 2rem;
@@ -99,6 +162,9 @@ width: 0;
 #header-logo {
   width: 155px;
   height: 30px;
+}
+#header-logo {
+  cursor: pointer;
 }
 #header-hamburg {
   width: 29px;
@@ -439,6 +505,14 @@ color:white;
 
 /* IRÁ COMEÇAR A MUDAR A PARTIR DO MOMENTO QUE AS IMAGENS NÃO CRESCEM MAIS, TAMANHO MAXIMO DELAS 580PX */
 @media screen and (min-width: 680px) {
+  .hamburger-menu {
+   
+    display: none;
+    
+  }
+  .sidebar {
+    display: none;
+  }
   #footer-section4 .padding-add { 
     padding: 0rem 10rem;
   }
