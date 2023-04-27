@@ -452,6 +452,9 @@ h6 {
  width:12rem;
  filter: invert(34%) sepia(6%) saturate(3724%) hue-rotate(117deg) brightness(60%) contrast(87%);
 }
+#logo-last:hover {
+  cursor: pointer;
+}
 
 /* //HAMBURGER */
 
